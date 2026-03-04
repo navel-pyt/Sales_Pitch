@@ -3,6 +3,8 @@
 > Upload a campaign brief. Get audience recommendations, geo-confirmed signals, and a ready-to-send sales asset — in ~30 seconds.  
 > Built solo as a PM-led prototype to compress the brief-to-pitch cycle for commercial teams.
 
+<img width="531" height="891" alt="Capture d&#39;écran 2026-03-02 235749" src="https://github.com/user-attachments/assets/e8791bde-dd4f-47cc-83d5-2acc4eeeb99e" />
+
 ---
 
 ## The problem
