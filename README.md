@@ -57,8 +57,8 @@ pitch_server.py  (Flask :5050)
 | Signal | Source | What it adds |
 |---|---|---|
 | Persona affinity scores | ClickHouse (local DuckDB cache) | Which audiences match the brief |
-| ZIP-level geo confirmation | Mastercard + Census (via DuckDB) | Where the audience lives |
-| Brand clickstream | DATOS DAF · RIF · SEF (S3 samples) | Co-visitation, funnel, search intent |
+| ZIP-level geo confirmation | Paiement + Census (via DuckDB) | Where the audience lives |
+| Brand clickstream | Search/Browse/Purchase (S3 samples) | Co-visitation, funnel, search intent |
 | Real-time trends | Google Trends API | Current category momentum |
 
 ---
