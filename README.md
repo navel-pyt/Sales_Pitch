@@ -14,6 +14,9 @@ Sales teams spent hours manually building pitch decks — pulling data from diff
 **This tool closes that loop.**
 
 ---
+<img width="664" height="461" alt="Capture d&#39;écran 2026-03-05 212719" src="https://github.com/user-attachments/assets/03284feb-6f09-4725-a7db-1d0d496f291a" />
+
+<img width="637" height="464" alt="Capture d&#39;écran 2026-03-05 212854" src="https://github.com/user-attachments/assets/3b23f907-1234-412a-ae88-e03979c49ab3" />
 
 ## How it works
 
