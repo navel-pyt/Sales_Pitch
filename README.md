@@ -9,11 +9,13 @@
 
 ## The problem
 
-Sales teams spent hours manually building pitch decks — pulling data from different sources, joining Excel files locally, writing narratives from scratch. Each pitch was disconnected from Ogury's actual audience data.
+Sales teams spent hours manually building pitch decks — pulling data from different sources, joining Excel files locally, writing narratives from scratch. Each pitch was disconnected from actual audience data.
 
 **This tool closes that loop.**
 
 ---
+<img width="664" height="461" alt="Capture d&#39;écran 2026-03-05 212719" src="https://github.com/user-attachments/assets/55bda4dc-3814-40db-8244-bec1de112386" />
+<img width="637" height="464" alt="Capture d&#39;écran 2026-03-05 212854" src="https://github.com/user-attachments/assets/1ef89d64-3725-4146-b4f1-cea29570840a" />
 
 ## How it works
 
@@ -22,7 +24,7 @@ Sales teams spent hours manually building pitch decks — pulling data from diff
         ↓
 2. Gemini 2.0 decodes brief → extracts brand, industry, keywords, themes
         ↓
-3. Ogury personas scored via TF-IDF + AI → top segments recommended
+3. Audience personas scored via TF-IDF + AI → top segments recommended
         ↓
 4. ZIP-level geo signals pulled from local DuckDB cache (ClickHouse-sourced)
         ↓
@@ -54,7 +56,7 @@ pitch_server.py  (Flask :5050)
 
 | Signal | Source | What it adds |
 |---|---|---|
-| Persona affinity scores | Ogury ClickHouse (local DuckDB cache) | Which audiences match the brief |
+| Persona affinity scores | ClickHouse (local DuckDB cache) | Which audiences match the brief |
 | ZIP-level geo confirmation | Mastercard + Census (via DuckDB) | Where the audience lives |
 | Brand clickstream | DATOS DAF · RIF · SEF (S3 samples) | Co-visitation, funnel, search intent |
 | Real-time trends | Google Trends API | Current category momentum |
@@ -90,7 +92,7 @@ This is a **PM-led prototype built on real data samples** — designed to valida
 
 **What it demonstrates:**
 - A solo PM can compress the 0→validated-concept cycle significantly
-- The agentic AI loop (brief → data → asset) works end-to-end on real Ogury data
+- The agentic AI loop (brief → data → asset) works end-to-end on real data
 - Clear separation of concerns makes engineering scale-up straightforward
 
 **Next step**: production deployment with full ClickHouse live queries (replacing local DuckDB cache) — pending engineering resourcing.
@@ -116,4 +118,4 @@ python src/pitch_server.py
 
 ---
 
-*Part of the Ogury Data & Insights product suite. Internal use.*
+*Part of the Data & Insights product suite.*
